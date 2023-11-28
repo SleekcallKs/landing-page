@@ -15,22 +15,22 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      <PageMetaTags title="Home" description={""} url=""/>
-    <div itemScope itemType="https://schema.org/WebSite">
-      <meta itemProp="url" content="https://www.webdesignai.com/"/>
-      <meta itemProp="name" content="Web Design AI"/>
-    </div>
-        <Hero />
-        <GenerationStep />
-        <FeatureSection showHeading={true} title="Feature title 1"/>
+      <PageMetaTags title="Home" description={""} url="" />
+      <div itemScope itemType="https://schema.org/WebSite">
+        <meta itemProp="url" content="https://www.webdesignai.com/" />
+        <meta itemProp="name" content="Web Design AI" />
+      </div>
+      <Hero />
+      <GenerationStep />
+      <FeatureSection showHeading={true} title="Kundenbindung" />
 
-        <FeatureSection title="Featuer title 2" leftText="1" />
+      <FeatureSection title="Effizienzsteigerung" leftText="1" />
 
-        <FeatureSection title="Feature title 3"/>
+      <FeatureSection title="Lead Generierung" />
 
-        <Testimonials />
-        <Pricing />
-        <CTA2 />
+      <Testimonials />
+      <Pricing />
+      <CTA2 />
     </>
   )
 }
