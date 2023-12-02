@@ -34,7 +34,7 @@ const features = [
 export default function Home() {
   return (
     <div className='min-h-screen'>
-      <PageMetaTags title="Sleekcallks" description={""} url="" />
+      <PageMetaTags title="Sleekcallks" description={"Inbound- und Outbound-Callcenter von Pristina"} url="/" />
       <div itemScope itemType="https://schema.org/WebSite">
         <meta itemProp="url" content="https://www.sleekcall-ks.com/" />
         <meta itemProp="name" content="SleekCallKs" />
