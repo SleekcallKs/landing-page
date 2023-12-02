@@ -7,17 +7,17 @@ function Footer() {
       <div className="bg-slate-50 flex justify-center">
         <footer className="footer pt-10 pb-24 px-4 max-w-6xl  text-base-content">
           <div>
-            <p className="font-bold text-2xl">Web Design AI<br /></p>
+            <p className="font-bold text-2xl">SleekCallKs<br /></p>
           </div>
           <div>
             <span className="footer-title">Information</span>
-            <Link href="/about-us" className="link link-hover">About Us</Link>
+            <Link href="/about-us" className="link link-hover">Über uns</Link>
             <Link href="/faqs" className="link link-hover">FAQs</Link>
           </div>
           <div>
             <span className="footer-title">Legal</span>
-            <Link href="/privacy-policy" className="link link-hover">Privacy Policy</Link>
-            <Link href="/terms-and-conditions" className="link link-hover">Terms and Conditions</Link>
+            <Link href="/privacy-policy" className="link link-hover">Datenschutzrichtlinie</Link>
+            <Link href="/terms-and-conditions" className="link link-hover">Geschäftsbedingungen</Link>
           </div>
           <div>
             <span className="footer-title">Social</span>

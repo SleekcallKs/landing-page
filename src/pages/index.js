@@ -14,14 +14,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <>
-      <PageMetaTags title="Home" description={""} url="" />
+    <div className='min-h-screen'>
+      <PageMetaTags title="Sleekcallks" description={""} url="" />
       <div itemScope itemType="https://schema.org/WebSite">
-        <meta itemProp="url" content="https://www.webdesignai.com/" />
-        <meta itemProp="name" content="Web Design AI" />
+        <meta itemProp="url" content="https://www.sleekcall-ks.com/" />
+        <meta itemProp="name" content="SleekCallKs" />
       </div>
       <Hero />
-      <GenerationStep />
+      {/* <GenerationStep /> */}
       <FeatureSection showHeading={true} title="Kundenbindung" />
 
       <FeatureSection title="Effizienzsteigerung" leftText="1" />
@@ -29,8 +29,8 @@ export default function Home() {
       <FeatureSection title="Lead Generierung" />
 
       <Testimonials />
-      <Pricing />
+      {/* <Pricing /> */}
       <CTA2 />
-    </>
+    </div>
   )
 }

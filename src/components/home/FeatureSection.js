@@ -2,6 +2,7 @@ import Link from "next/link"
 import FeatureImageContainer from "../common/FeatureImageContainer"
 
 
+import { motion } from "framer-motion"
 
 function FeatureSection({ title, leftText, showHeading }) {
     return (
@@ -9,7 +10,13 @@ function FeatureSection({ title, leftText, showHeading }) {
             {showHeading && <h2 className="text-3xl mt-12 text-center font-bold">Warum ein externer Anbieter
 
                 besonders uns</h2>}
-            <div className={`grid place-items-center w-full ${leftText ? "" : ""}`}>
+            <motion.div
+                initial={{ bottom: "-150px", opacity: 0 }}
+                whileInView={{ opacity: 1, bottom: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5 }}
+
+                className={`grid relative place-items-center w-full ${leftText ? "" : ""}`}>
                 <div className="max-w-6xl px-4 py-12 content-center justify-center">
                     <div className="grid  md:grid-cols-2 grid-cols-1 gap-8">
                         {
@@ -26,7 +33,7 @@ function FeatureSection({ title, leftText, showHeading }) {
                         }
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
