@@ -45,6 +45,7 @@ export default function Home() {
       {features.map((feature, i) => {
         return (
           <FeatureSection
+            key={i}
             showHeading={i == 0} title={feature.title}
             description={feature.description}
             image={feature.image}
