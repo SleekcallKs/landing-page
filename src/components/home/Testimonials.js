@@ -13,8 +13,8 @@ function Testimonials() {
 
     return (
         <>
-            <div className="grid place-items-center w-full ">
-                <div className="max-w-6xl px-4 py-24 content-center justify-center">
+            <div className="grid place-items-center  ">
+                <div className="max-w-6xl px-4 py-24 content-center justify-center " >
                     <h1 className="text-3xl  text-center font-bold">Testimonials</h1>
                     <div className="grid mt-12 md:grid-cols-3 grid-cols-1 gap-8">
                         {

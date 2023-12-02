@@ -4,7 +4,7 @@ import Link from "next/link"
 function Footer() {
   return (
     <div>
-      <div className="bg-slate-50 flex justify-center">
+      <div className="bg-gradient-to-t from-blue-500 to-purple-7000 flex justify-center">
         <footer className="footer pt-10 pb-24 px-4 max-w-6xl  text-base-content">
           <div>
             <p className="font-bold text-2xl">SleekCallKs<br /></p>
@@ -33,7 +33,7 @@ function Footer() {
           </div>
         </footer>
       </div>
-      <div className="p-4 flex justify-center bg-secondary">
+      <div className="p-4 flex justify-center bg-purple-7000">
         <div className="max-w-5xl text-slate-50">
           <p>Copyright © 2023 – Alle Rechte vorbehalten</p>
         </div>
