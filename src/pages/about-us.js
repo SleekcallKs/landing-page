@@ -1,21 +1,37 @@
+import PageMetaTags from '@/containers/PageMetaTags';
+import React from 'react';
 import InnerPageContainer from "@/components/common/InnerPageContainer";
-import PageMetaTags from "@/containers/PageMetaTags";
 
-export default function Page() {
+const AboutUs = () => {
     return (
-      <InnerPageContainer title="About Us">
-            <PageMetaTags title="About Us" description={"Meta tags"} url="/about-us"/>
-            <p className="mt-8">
-            Welcome to Company Name, where innovation meets design! We are a cutting-edge company that is passionate about transforming design into a seamless, imaginative, and enjoyable experience for everyone. Our mission is to empower you with AI-driven ideas.
-            </p>
+        <InnerPageContainer title="Uber uns">
 
-            <h3 className="mt-8 font-bold text-xl">Our Story</h3>
-            <p className="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet facilisis odio, nec cursus metus condimentum vel. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula auctor turpis vitae elementum. Donec vitae lobortis orci. Praesent efficitur enim vel lorem tempus, sed placerat eros accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer tempus erat sit amet interdum finibus. Fusce dolor tellus, pharetra eu eros ut, rutrum accumsan nunc. Nam imperdiet, odio vel suscipit volutpat, mi mauris varius ipsum, euismod suscipit sapien orci vitae magna.
-            </p>
-            <h3 className="mt-8 font-bold text-xl">What Sets Us Apart</h3>
-<p className="mt-2">Sed sagittis convallis nibh. Morbi ullamcorper neque nec turpis ultricies congue. Sed eget erat non magna semper maximus nec vel eros. Aliquam erat volutpat. Nullam a nibh ut massa rutrum aliquam quis sed nibh. Morbi pretium elit mauris, dictum lacinia velit volutpat a. Curabitur congue nulla nibh, sed posuere lorem accumsan eu. Ut placerat orci lectus, eu bibendum dui egestas at. Duis magna arcu, pellentesque nec ante vel, tincidunt cursus justo. Aliquam erat volutpat. Sed eros erat, luctus quis quam vel, facilisis tempor enim. Donec vel augue ex.</p>
-      </InnerPageContainer>
-    )
-  }
-  
+            <PageMetaTags title="Uber uns" description={"Wer sind Wir"} url="/about-us" />
+            <div className="container mx-auto px-4 py-8" >
+                <div className="bg-white shadow-lg rounded-lg p-6">
+                    <h2 className="text-2xl font-semibold text-gray-800">Über Uns</h2>
+                    <p className="mt-4 text-gray-600">
+                        Willkommen in unserem Callcenter! Wir sind spezialisiert auf erstklassige Inbound- und Outbound-Anrufdienste für den deutschsprachigen Markt. Unser Team setzt sich für hervorragende Kundenerlebnisse und effektive Kommunikationslösungen ein.
+                    </p>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-semibold text-gray-800">Unsere Dienstleistungen</h3>
+                        <ul className="list-disc list-inside text-gray-600">
+                            <li>Inbound-Kundensupport</li>
+                            <li>Outbound-Verkauf und Marketinganrufe</li>
+                            <li>Terminvereinbarung und Nachverfolgung</li>
+                            <li>Marktforschung und Umfragen</li>
+                        </ul>
+                    </div>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-semibold text-gray-800">Warum Uns Wählen?</h3>
+                        <p className="text-gray-600">
+                            Unser Team spricht fließend Deutsch und versteht die kulturellen Feinheiten, was eine hochwertige und effektive Kommunikation gewährleistet. Wir nutzen modernste Technologie, um effiziente und zuverlässige Dienstleistungen anzubieten.
+                        </p>
+                    </div>
+                </div>
+            </div >
+        </InnerPageContainer>
+    );
+};
+
+export default AboutUs;
