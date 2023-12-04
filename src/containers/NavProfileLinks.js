@@ -80,8 +80,8 @@ function NavProfileLinks() {
             {
                 !isLoggedIn &&
                 <>
-                    <button className='btn btn-sm text-xs mr-4 normal-case md:btn-ghost ' onClick={() => openLoginModal()}>Sign In</button>
-                    <Link href="/start-designing"><button className='btn md:mt-0 mt-4 btn-block btn-sm text-xs btn-outline normal-case hover:text-white hover:btn-primary'>Lehr mehr</button></Link>
+                    {/* <button className='btn btn-sm text-xs mr-4 normal-case md:btn-ghost ' onClick={() => openLoginModal()}>Sign In</button> */}
+                    <Link href="/unsere-service"><button className='btn md:mt-0 mt-4 btn-block btn-sm text-xs btn-outline normal-case hover:text-white hover:btn-primary'>Lehr mehr</button></Link>
                 </>
             }
 
