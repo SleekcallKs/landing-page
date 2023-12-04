@@ -3,9 +3,9 @@ import Link from "next/link"
 
 function Footer() {
   return (
-    <div className="bg-gradient-to-t from-purple-700 to-blue-500 text-white h-[50vh] flex items-center justify-center">
-      <div className=" flex  flex-1 justify-center">
-        <footer className="footer pt-10 pb-24 px-4 max-w-6xl  text-base-content text-white">
+    <div className="bg-gradient-to-t from-purple-700 to-blue-500 text-white h-[full] flex-col items-start   flex  md:items-center  justify-center">
+      <div className=" flex   flex-1 justify-center w-full">
+        <footer className="footer pt-10 pb-24 px-4 max-w-6xl  w-full  text-white flex flex-col md:flex-row justify-between gap-12">
           <div>
             <p className="font-bold text-2xl">SleekCallKs<br /></p>
           </div>

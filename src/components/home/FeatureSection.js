@@ -20,19 +20,17 @@ function FeatureSection({ title, description, leftText, showHeading, image, link
 
                 className={`grid relative place-items-center w-full ${leftText ? "" : ""}`}>
                 <div className="max-w-6xl px-4 py-0 content-center justify-center">
-                    <div className="grid  md:grid-cols-2 grid-cols-1 gap-8 items-center">
-                        {
-                            !leftText && <FeatureImageContainer imageUrl={image} />
-                        }
+                    <div className={`grid  md:grid-cols-2 grid-cols-1  md:gap-8 items-center`}>
+                        <div className={`${leftText ? "" : "md:order-last"}`}>
+                            <FeatureImageContainer imageUrl={image} />
+
+                        </div>
 
                         <div className="text-center  ">
                             <h2 className="text-2xl lg:text-4xl  text-center leading-10 font-bold"> {title}</h2>
                             {description && <p className="text-gray-600 mt-2">{description}</p>}
                             <Link href="/start-designing"><button className="btn btn-primary mt-8 px-8 normal-case">Lehr mehr</button></Link>
                         </div>
-                        {
-                            leftText && <FeatureImageContainer imageUrl={image} />
-                        }
                     </div>
                 </div>
             </motion.div>

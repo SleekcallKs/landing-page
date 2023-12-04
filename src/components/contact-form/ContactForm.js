@@ -34,7 +34,7 @@ const ContactForm = () => {
             initial={{ bottom: "-150px", opacity: 0 }}
             whileInView={{ opacity: 1, bottom: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }} className='w-full flex  flex-col justify-center items-center mb-16 min-h-[50vh]ind'>
+            transition={{ duration: 1 }} className='w-10/12 md:w-full flex  flex-col justify-center mx-auto items-center mb-16 min-h-[50vh]'>
             <h1 className="text-3xl  text-center font-bold">Uns kontaktieren</h1>
             <div className="bg-base-100 px-8 py-12 max-w-xl w-full shadow-xl rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Kontaktformular</h2>
