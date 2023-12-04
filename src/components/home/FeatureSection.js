@@ -16,7 +16,7 @@ function FeatureSection({ title, description, leftText, showHeading, image, link
                 initial={{ bottom: "-150px", opacity: 0 }}
                 whileInView={{ opacity: 1, bottom: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 1 }}
 
                 className={`grid relative place-items-center w-full ${leftText ? "" : ""}`}>
                 <div className="max-w-6xl px-4 py-0 content-center justify-center">

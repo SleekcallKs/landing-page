@@ -6,9 +6,27 @@ const ContactForm = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
+    const subscribeNewsLetter = async (e) => {
         e.preventDefault();
-        // Handle form submission logic here
+
+        // this is where your mailchimp request is made
+
+        const res = await fetch('/api/email-subscribe', {
+            body: JSON.stringify({
+                email: email,
+                name: name,
+                message: message
+            }),
+
+            headers: {
+                'Content-Type': 'application/json',
+            },
+
+            method: 'POST',
+        });
+    };
+
+    const handleSubmit = (e) => {
     };
 
     return (
@@ -16,7 +34,7 @@ const ContactForm = () => {
             initial={{ bottom: "-150px", opacity: 0 }}
             whileInView={{ opacity: 1, bottom: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1.5 }} className='w-full flex  flex-col justify-center items-center mb-16 min-h-[50vh]ind'>
+            transition={{ duration: 1 }} className='w-full flex  flex-col justify-center items-center mb-16 min-h-[50vh]ind'>
             <h1 className="text-3xl  text-center font-bold">Uns kontaktieren</h1>
             <div className="bg-base-100 px-8 py-12 max-w-xl w-full shadow-xl rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Kontaktformular</h2>

@@ -24,7 +24,7 @@ function Testimonials() {
                                         initial={{ bottom: "-150px", opacity: 0 }}
                                         whileInView={{ opacity: 1, bottom: 0 }}
                                         viewport={{ once: true }}
-                                        transition={{ duration: 1.5 }}
+                                        transition={{ duration: 1 }}
                                         key={k} className="card w-full bg-base-100 shadow-xl">
                                         <figure className="px-10 pt-10">
                                             <img className="mask w-20 h-20 mask-circle object-cover" src={t.profilePic} />
